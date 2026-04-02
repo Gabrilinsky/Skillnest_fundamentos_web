@@ -1,0 +1,44 @@
+<!-- Tarea formulario: Crear un fomulario de registro para reservar una hora al doctor.
+Deb incluir: Nombre del paciente, Fecha de cita, Fecha_nacimiento, Sintomas del paciente, Ciudad(lista_desplegable),
+Casilla de verficación-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea: Formularios</title>
+</head>
+
+
+<body>
+<form action="Registro" method="Post">
+        <label for="nombre_completo">Tu nombre completo:</label>
+        <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Ingresa tu nombre">
+    </div>
+    <div>
+        <label for="Fecha de cita">fecha de cita</label>
+        <input type="date" id="fecha de cita" name="Fecha de cita">
+    </div>
+    <div> 
+    <label for="Fecha_nacimiento">Fecha_nacimiento</label>
+        <input type="date" id="Fecha_nacimiento" name="Fecha_nacimiento">
+    </div>
+    <div>
+        <label for="Sintomas Del Paciente">Sintomas Del Paciente:</label>
+        <input type="text" id="Sintomas del paciente" name="Sintomas" placeholder="Sintomas">
+    </div>
+    <div>
+    <label for="Ciudad">Ciudad</label>
+    <select id="Ciudad" name="Ciudad">
+<option value="Santiago">Santiago</option>
+<option value="La Pintana"></option>
+<option value="La Granja"></option>
+<option value="Puente Alto"></option>
+<option value="Maipu" ></option>
+<option value="Rancagua"></option>
+    </select>
+</div>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
