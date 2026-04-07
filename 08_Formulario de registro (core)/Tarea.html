@@ -8,31 +8,34 @@
 <!-- Div -> uso de cajas para organizar el codigo agrupando elementos (secciones)-->
 <body>
 <h1>Crea una cuenta de Discord</h1>
-<h1>Crear Una Cuenta De Discord</h1>
 <form action="/registro" method="post">
 <div>
     Nombre:
-    <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa Tu nombre">
+    <input type="text" name="Nombre" required>
 </div>
 <div>
+<br><br>
     Apellido:
-    <input type="text" id="Apellido" name="Apellido" placeholder="Ingresa tu apellido">
+    <input type="text" name="Apellido" required>
 </div>
 <div>
+<br><br>
     Correo Electronico:
     <input type="text" name="Correo Electronico" required>
 <div>
+<br><br>
     Contraseña:
-    <input type="text" id="Contraseña" name="Contraseña" placeholder="Ingresa Contraseña">
+    <input type="text" name="Contraseña" required>
 </div>
 <div>
+<br><br>
     Confirmar Contraseña:
-    <input type="text" id="Confirmar Contraseña"> name="Confirmar Contraseña" placeholder="Confirma la contraseña"
-</div>
+    <input type="text" name="Confirmar Contraseña" required>
 <div>
-    <label for="Fecha de nacimiento"> Fecha De Nacimiento:</label>
+    Fecha De Nacimiento:
     <input type="date" id="Fecha De Nacimiento" name="Fecha De Nacimiento">
 </div>
+<br><br>
 <div>
     Género:
     <input type="radio" name="Masculino" required>
@@ -41,6 +44,7 @@
     Descripción sobre ti:
     <textarea name="Comentario" rows="4" cols="30"></textarea>
 </div>
+<br><br>
 <div>
     Selecciona tus Intereses
         <select size="4">
@@ -52,7 +56,7 @@
 <div>
     <input type="checkbox" name="Al registrarse">
     
-Al registrarse, aceptas los Términos y condiciones de Discord. </label> 
+Al registrarse, aceptas los Términos y condiciones de Discord.
 </div>
 <br>
 <div>
