@@ -7,26 +7,26 @@
 </head>
 <!-- Div -> uso de cajas para organizar el codigo agrupando elementos (secciones)-->
 <body>
+<h1>Crea una cuenta de Discord</h1>
 <h1>Crear Una Cuenta De Discord</h1>
 <form action="/registro" method="post">
 <div>
-    <label for="Nombre">Nombre:</label>
+    Nombre:
     <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa Tu nombre">
 </div>
 <div>
-    <label for="Apellido">Apellido:</label>
+    Apellido:
     <input type="text" id="Apellido" name="Apellido" placeholder="Ingresa tu apellido">
 </div>
 <div>
-    <label for="Correo Electronico"> Correo Electronico:</label>
-    <input type="text" id="Correo Electronico" name="Correo Electronico" placeholder="Ingresa tu Correo">
-</div>
+    Correo Electronico:
+    <input type="text" name="Correo Electronico" required>
 <div>
-    <label for="Contraseña"> Contraseña:</label>
+    Contraseña:
     <input type="text" id="Contraseña" name="Contraseña" placeholder="Ingresa Contraseña">
 </div>
 <div>
-    <label for="Confirmar Contraseña"> Confirmar Contraseña:</label>
+    Confirmar Contraseña:
     <input type="text" id="Confirmar Contraseña"> name="Confirmar Contraseña" placeholder="Confirma la contraseña"
 </div>
 <div>
@@ -34,17 +34,15 @@
     <input type="date" id="Fecha De Nacimiento" name="Fecha De Nacimiento">
 </div>
 <div>
-    <label for="Género"> Género:</label>
-    <input type="radio"> id="Maculino" name="Masculino" value="Masculino"> Masculino
-    <input type="radio"> id="Femenino" name="Femenino" value="Femenino"> Femenino
-    <input type="radio"> id="Prefiero no decirlo" name="Prefiero no decirlo" value="Prefiero no decirlo"> Preferio no decirlo
+    Género:
+    <input type="radio" name="Masculino" required>
+    <input type="radio" name="Femenino" required>
+    <input type="radio" name="Preferio no decirlo" required>
+    Descripción sobre ti:
+    <textarea name="Comentario" rows="4" cols="30"></textarea>
 </div>
 <div>
-    <label for="Descripción sobre ti"> Descripción sobre ti:</label>
-    <textarea id="Comentario" name="Comentario" rows="4" cols="30"></textarea>
-</div>
-<div>
-    <label for="Intereses"> Selecciona tus Intereses</label>
+    Selecciona tus Intereses
         <select size="4">
         <option value="Tecnologia">Tecnologia</option>
         <option value="Peliculas">Peliculas</option>
@@ -52,8 +50,8 @@
         <option vaule="Musica"> Musica</option></select>
 </div>
 <div>
-    <input type="checkbox"> id="Acepto" name="Acepto"
-    <label for= Al registrarse>
+    <input type="checkbox" name="Al registrarse">
+    
 Al registrarse, aceptas los Términos y condiciones de Discord. </label> 
 </div>
 <br>
