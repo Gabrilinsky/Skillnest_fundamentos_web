@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio de sesión</title>
+</head>
+
+
+<body><!--Cuerpo del documento-->
+<header><!--encabezado de la pagina-->
+    <h1>Iniciar sesión</h1>
+    <nav><!--Barra de navegación con enlaces-->
+    <ul>
+    <li><a href="#">inicios </a></li>
+    <li><a href="#"> </a></li>
+    <li><a href="#"> </a></li>
+</header>
+<section>
+    <form action="/login" method="post">
+        <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <input type="checkbox" id="recordarme" name="recordarme">
+            <label for="recordarme">Recordarme</label>
+        </div>
+        <button type="submit">Ingresar</button>
+    </form>
+</section>
+</body>
+</html>
