@@ -1,0 +1,50 @@
+h1 {
+   color: rebeccapurple;
+}
+
+.green {
+   color: mediumseagreen;
+}
+
+#red {
+   color: tomato;
+}
+
+.quote p {
+   color: darkslategray;
+   font-style: italic;
+}
+.header > img {
+   height: 50px;
+}
+#container p {
+   font-size: 16px;
+   background-color: #444;
+   color: white;
+}
+
+#container p.highlight {
+   font-weight: bold;
+   color: gold;
+}
+input[type="text"] {
+   border: 2px solid royalblue;
+}
+
+input[type="submit"] {
+   color: white;
+   background-color: mediumvioletred;
+   border: none;
+}
+.Color_nombre{
+color:aqua;
+background-color: coral;
+}
+.Color_rgb{
+color:blueviolet;
+background-color: rgb(33, 35, 145);
+}
+.Color_hex{
+color: darkred;
+background-color: darkgrey;
+}

@@ -1,0 +1,63 @@
+* { /*selector comodin (Selecciona todos los elementos html)  */
+    outline: 2px dashed crimson; 
+   /* Línea externa de 2px */
+    margin: 0; /* formatea espacios externos de elementos html */
+    padding: 0; /* formatea espacios interno de elementos html */
+    box-sizing: border-box; /*Considera bordes dentro de tamaño de elementos html*/
+}
+
+
+
+
+
+body{
+    padding: 60px;
+}
+
+h1 {
+   color: rebeccapurple;
+}
+
+.green {
+   color: mediumseagreen;
+}
+
+#red {
+   color: tomato;
+}
+.quote p {
+   color: darkslategray;
+   font-style: italic;
+}
+.quote h4 { color:rgb(24, 160, 153);
+font-weight: bold; /* negrita */
+}
+.header > img {  /* solo afecta a los elementos hijos directos (>) */
+   height: 50px; /* Altura de imagen */
+}
+
+#container p {
+   font-size: 16px;
+   background-color: #9b1b1b;/*color de la letra*/
+   color: white; /*tamaño  de la letra*/
+}
+
+#container p.highlight {
+   font-weight: bold;
+   color: gold;
+}
+
+form{
+ padding: 20px;
+}
+
+input[type="text"] {
+   border: 2px solid royalblue;
+}
+
+input[type="submit"] {
+   color: white;
+   background-color: mediumvioletred;
+   border: none; /* Quita los bordes por defecto*/
+   padding:50px; /* Manito para realizar click*/
+   }
