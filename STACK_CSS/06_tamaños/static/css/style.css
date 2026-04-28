@@ -1,0 +1,169 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   /* outline: solid 1px red;*/
+}
+
+.encabezado{
+   width: 100%;
+   /*Todo el ancho de la pagina*/
+   background-color: grey;
+   padding: 15px;
+}
+
+.titulo_header{
+   text-align: center;
+   color: white;
+}
+
+.container{
+   outline: solid 1px grey;
+   margin: 0 auto;
+   width: 900px;
+   padding: 20px;
+}
+
+.aceptar{
+   width: 100px;
+   height: 50px;
+}
+
+.caja1{
+   margin: 0 auto;
+   width: 80%;
+   height: 200px;
+   background-color: yellow;
+}
+
+.parrafo1{
+   font-size: 30px;
+}
+
+.link1{
+   font-size: 300%; /*tamaño proporcional*/
+}
+.cursiva{
+   color: blue;
+   margin-top: 15px;
+   font-style: italic;
+}
+
+/*
+📦Manejo del contenido con overflow (hidden, scroll, auto) 
+*/
+
+.caja{
+   width: 200px;
+   height: 100px;
+   display: inline-block;
+}
+
+.example1{
+background-color: crimson;
+height: 100px;
+width: 300px;
+}
+
+.example2{
+background-color: gold;
+height: 100px;
+width: 300px;
+}
+
+.example3{
+background-color: darkslategray;
+height: 100px;
+width: 300px;
+}
+.hidden{
+   overflow: hidden;
+}
+.auto{
+   overflow: auto;
+}
+.scroll{
+   overflow: scroll;
+}
+.banner{
+   height:  400px;
+   width: 100%;
+   background: aqua url("/STACK_CSS/06_tamaños/static/images/fantasma.jpg") no-repeat fixed center center;
+   background-size: 120% ;
+
+}
+.Cancelar{
+   border: 2px dotted red;
+   display: inline-block;
+
+}
+
+.articulo{
+   border: 2px solid rgb(red, green, blue);
+   height: 50px;
+   width: 100px;
+   display: inline-block;
+}
+button{
+   border-radius: 5px;
+}
+
+
+/*  Bordes redondeados*/
+.boton.rendodeado{
+   padding: 10 px 40px;/* redondea esquinas */
+   border-radius: 15px;
+}
+
+.circulo {
+    width: 100px;           /* Ancho fijo */
+    height: 100px;          /* El mismo valor que el ancho */
+    background-color: red;  /* Color para que se vea */
+    border-radius: 50%;     /* Esto convierte el cuadrado en círculo */
+}
+
+.caja_redondeando{
+   cursor: pointer;
+   width: 40px;
+   height: 40px;
+   padding: 20px 40px;
+   background-color: aqua;
+   color: black;
+   border-radius: 50%; /* 50% de radius: circulo perfecto */
+   font-weight: bold;
+}
+
+.cajitas{
+width: 100px;
+height: 40px;
+outline: solid 1px blue;
+}
+
+.box1{background-color: aqua;
+      padding:20px; /* Padding aplicado en todos los lados */
+}
+
+.box2{background-color: red ;
+      padding-top: 0px; /* Espacio interno: arriba */
+      padding-right: 0px; /* Espacio Interno: derecha */
+      padding-left: 0px; /* Espacio interno: abajo */
+      padding-bottom: 5px; /* Espacio Interno: izquierda */
+      /* padding: 0px 5px 0px 5px --> aplicando en todos los lado */
+      /* padding: 0px 5px --> 0px del eje (Y) y 5px del eje (X) */
+}
+
+.box3{background-color: purple ;
+margin: 10px; /* Margen externo: separa elementos */
+}
+
+
+.box4{background-color: darkblue ;
+margin: 0px 20px; /* eje X modificado con margin */
+padding: 5px 0px;/* eje Y modificado con padding */
+}
+
+.box5{
+   background-color: darkgreen;
+   float:left;
+
+}

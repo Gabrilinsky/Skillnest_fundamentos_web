@@ -1,0 +1,44 @@
+*{
+text-align: center;
+}
+.row{
+    text-align: center;
+    padding: 10px;
+}
+.body{
+    background-color: aqua;
+    color: aliceblue;
+    text-align: center;
+}
+
+.Buscar{ 
+    text-align: center;
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    border: rgb(174, 202, 16) solid 2px;
+}
+
+.Caja_redondeada{
+border-radius: 50%;
+background-color: yellow;
+height: 50px;
+width: 50px;
+text-align: center;
+font-weight: bold;
+border:yellow;
+color:white;
+outline: solid 1px;
+font-size: large;
+}
+.Cuenta{
+background-color: blue;
+height:40px;
+width:110px;
+padding: 12px;
+box-shadow: 2px  5px  10px black ;
+text-align: center;
+color: antiquewhite;
+border: blue;
+}
