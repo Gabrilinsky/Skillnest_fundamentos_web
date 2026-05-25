@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Naranjo">
+    <title>Guia visual de Flexbox</title>
+    <!--Conexión css-->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Guía visual de Flexbox</h1>
+        <p>Aprendiendo justify-content, align-timesalign-times
+            flex-direction y gap
+        </p>
+    </header>
+    <!--Menu de navegación-->
+    <nav class="nav">
+        <a href="#">Inicios</a>
+        <a href="#">Flexbox</a>
+        <a href="#">Ejemplos</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <!--MAIN-->
+    <main class="main">
+        <section class="seccion">
+            <h2>1. justify-content + Gap</h2>
+            <p>Justify-content:center, centrar elementos horizontalmente y gap agrega separación.</p>
+            <div class="contenedor ejemplo1">
+                <div class="caja">1</div>
+                <div class="caja">2</div>
+                <div class="caja">3</div>
+            </div>
+        </section>
+        <section class="seccion ejemplo2">
+            <h2>align-items + gap</h2>
+            <p>align-items:center centrar los elementos verticalmente
+                que contiene y gap separa las cajas
+            </p>
+            <div class="contenedor ejemplo2">
+                <div class="caja">1</div>
+                <div class="caja">2</div>
+                <div class="caja">3</div>
+            </div>
+        </section>
+        <section class="seccion">
+            <h2>flex-direction column + gap</h2>
+            <p>flex-direction:column cambia a la dirección de los elementosa
+                a vertical y gap agrega separación</p>
+            <div class="contenedor ejemplo3">
+                <div class="caja">1</div>
+                <div class="caja">2</div>
+                <div class="caja">3</div>
+            </div>
+        </section>
+        <section class="seccion">
+            <h2>Space between + align-items</h2>
+            <p>space-between distribuye el espacio horizontalmente y
+                align-items:center centra verticalmente.
+            </p>
+            <div class="contenedor ejemplo4">
+                <div class="caja">1</div>
+                <div class="caja">2</div>
+                <div class="caja">3</div>
+            </div>
+        </section>
+        <section class="seccion">
+            <h2>5. centrado completo</h2>
+            <p>justify-content:center + align-items:center permiten
+                centrar perfectamente un elemento dentro.
+            </p>
+            <div class="contenedor ejemplo5">
+                <div class=" caja caja-grande">Centrado</div>
+            </div>
+        </section>
+
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <p>Ejemplo Flex. Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
