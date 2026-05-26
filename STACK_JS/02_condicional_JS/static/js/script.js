@@ -13,6 +13,7 @@ console.log("Conexión con js...")
 //Total a pagar
 
 
+
 //✅ Ejercicio 2: Acceso a evento
 //📝 Enunciado
 //Una persona puede ingresar a un evento si:
