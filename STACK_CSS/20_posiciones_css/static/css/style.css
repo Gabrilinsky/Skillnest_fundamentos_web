@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(244, 241, 241);
+    color: rgba(0, 0, 0, 0.755);
+    min-height: 150vh;
+    padding-bottom: 50px
+}
+
+/*posición fija (fixed)*/
+.barra-navegación {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 15px 30px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    z-index: 1000;
+    /*Posición en etapas*/
+}
+
+.barra-navegación h1 {
+    font-size: 1.2rem;
+}
+
+.enlace-nav {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+
+.enlace-nav:hover {
+    color: red;
+}
+
+/* Contenedor Principal */
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cuando los elementos no caben, bajan autom */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.tarjeta {
+    display: flex;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px black;
+    padding: 20px;
+    flex-direction: column;
+    color: cadetblue;
+    gap: 15px;
+    background-color: darkblue;
+    transition: transform 0.3s ease, box shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px black;
+}
+
+.tarjeta h2 {
+    font-size: 1.3rem;
+    color: darkcyan;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.755);
+    padding-bottom: 10px;
+}
+
+.explicación {
+    font-size: 0.9rem;
+    color: rgba(23, 230, 230, 0.747);
+    line-height: 1.4;
+    /* interlineado: separación de parrafo. */
+}
+
+/*Cajas grises*/
+.bloque-normal {
+    background-color: rgba(170, 170, 170, 0.993);
+    color: black;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+
+/* Ejemplos de static(El que obedece) */
+
+.bloque-estatico {
+    position: static;
+    /* Intentaremos moverlo, CSS ignorara el movimiento */
+    top: 40px;
+    left: 40px;
+    background-color: brown;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 2px solid;
+}
+
+/*EJEMPLO RELATIVE (el fantasma)*/
+.molde-fantasma {
+    border: 2px dashed rgb(196, 196, 196);
+    border-radius: 6px;
+    height: 48px;
+    position: relative;
+}
+
+.bloque-relativo {
+    position: relative;
+    /* Se mueve a partir del molde fantasma */
+    top: 25px;
+    left: 30px;
+
+    background-color: darkorange;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgb(127, 34, 0);
+}
+
+/*ejemplo absolute (ventana y x)*/
+.ventana-modal {
+    position: relative;
+    padding: 30px 15px 15px 15px;
+    text-align: center;
+    border: 2px solid rgb(34, 49, 182);
+    background-color: rgb(31, 177, 63);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.boton-cerrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /*se posiciona respecto a la ventana modal*/
+    top: -12px;
+    right: -12px;
+    background-color: rgb(42, 124, 90);
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(189, 143, 18, 0.384);
+    border: rgb(28, 218, 218) solid 2px;
+}

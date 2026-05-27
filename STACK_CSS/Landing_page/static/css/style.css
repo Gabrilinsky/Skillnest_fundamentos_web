@@ -149,7 +149,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 20px ;
 }
 
 .card img{
@@ -157,4 +157,7 @@ body{
     height: 60px;
     margin-bottom: 20px;
     object-fit: contain;
+}
+.btn:hover{
+    transform: scale 1.1 ;
 }
