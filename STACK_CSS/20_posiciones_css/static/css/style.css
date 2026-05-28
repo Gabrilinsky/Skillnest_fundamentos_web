@@ -6,10 +6,12 @@
 }
 
 body {
-    background-color: rgb(244, 241, 241);
+    background-color: rgb(71, 66, 66);
     color: rgba(0, 0, 0, 0.755);
     min-height: 150vh;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 /*posición fija (fixed)*/
