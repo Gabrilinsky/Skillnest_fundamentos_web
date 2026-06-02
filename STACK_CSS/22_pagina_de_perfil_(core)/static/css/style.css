@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f7;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logotipo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px auto;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3498db;
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+}
+.img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 33%;
+    left: 27,9%;
+}
+h1{
+    margin-top: 20px;
+}
+h2 {
+    color: #7f8c8d;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+
+
+img.perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    margin-top: 15px;
+    background-color: #e0e0e0;
+}
+
+/*HEADER*/
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: transparent;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease
+}
+
+.nav a:hover {
+    background-color: #3498db;
+}
+
+
+
+.btn {
+    background-color: #4825c5;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(50, 162, 154);
+}
+
+.parrafo a {
+    display: flex;
+    gap: 6px;
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.btn-editar {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3498db
+}
+
+.parrafo {
+    text-align: center;
+    padding: 20px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: white;
+}
+
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.accion {
+    border: none ;
+    color: white;
+    font-weight: bold;
+    cursor: pointer ;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 11px;
+    gap: 5px;
+}
+
+
+.btn-accion-aceptar {
+    background-color: green;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+
+.btn-accion-rechazar {
+    background-color: rgb(211, 9, 9);
+    padding: 3px 6px;
+    border-radius: 50%;
+
+}
+
+
+
+
+.columna-derecha {
+    width: 450px;
+    border-radius: 12px;
+    flex-direction: column;
+    display: flex;
+    margin: 40px auto;
+    gap: 20px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.tarjeta-conexiones {
+    width: 450px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px 20px 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 79%;
+}
+
+.row img{
+    height: 80px;
+    width: 80px;
+}
+
+.btn-1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn-2{
+    display: flex;
+    flex-direction: row;
+}
