@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("../static/images/Cyber.jpg");
+    background-image: url("../images/Cyber.jpg");
     background-repeat: no-repeat; 
     background-position: center center; 
     background-attachment: fixed; 
@@ -52,6 +52,19 @@ nav a {
 nav a:hover {
     background-color: #fcee0a;
     color: #000;
+}
+
+.registro {
+    color: #00b2bf;
+    background-color: #fcee0a;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.registro:hover {
+    color: #fcee0a;
+    background-color: #00f0ff;
+    transform: scale(1.1);
 }
 
 main {

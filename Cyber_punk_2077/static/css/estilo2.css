@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("../static/images/Tokyo.jpg");
+    background-image: url("../images/Tokyo.jpg");
     background-repeat: no-repeat; 
     background-position: center center; 
     background-attachment: fixed; 
@@ -212,6 +212,7 @@ h1 {
     width: 100%;
     max-height: 380px;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 .texto-arma-box {
