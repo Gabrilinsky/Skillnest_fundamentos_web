@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - Night City Net</title>
+    <link rel="stylesheet" href="../css/soporte.css">
+    <link rel="icon" href="../images/Cyberpunk_2077_logo.svg.ico">
+</head>
+<body>
+
+    <div class="support-container">
+        <div class="system-status">
+            <span class="status-dot"></span> SISTEMA DE REPORTE CRÍTICO
+        </div>
+        
+        <h2>SOPORTE TÉCNICO</h2>
+        <p class="support-subtitle">Reporta fallos en la interfaz o anomalías en tu Cyberware</p>
+
+        <form action="#">
+            
+            <div class="form-row">
+                <div class="support-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" placeholder="Ej. Judy" required>
+                    <span class="support-line"></span>
+                </div>
+                
+                <div class="support-group">
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" id="apellido" placeholder="Ej. Alvarez" required>
+                    <span class="support-line"></span>
+                </div>
+            </div>
+
+            <div class="support-group">
+                <label for="correo">HOLOCORREO DE CONTACTO</label>
+                <input type="email" id="correo" placeholder="usuario@nightcity.pub" required>
+                <span class="support-line"></span>
+            </div>
+
+            <div class="support-group">
+                <label for="tipo-problema">TIPO DE PROBLEMA</label>
+                <select id="tipo-problema" required>
+                    <option value="" disabled selected hidden>Selecciona la anomalía...</option>
+                    <option value="interfaz">Error visual / Glitch en la página</option>
+                    <option value="cyberware">Fallo de sincronización con el Arsenal</option>
+                    <option value="videos">Los trailers/gameplays no cargan</option>
+                    <option value="otro">Otro error del sistema</option>
+                </select>
+                <span class="support-line"></span>
+            </div>
+
+            <div class="support-group">
+                <label for="descripcion">DESCRIPCIÓN DEL GLITCH / ERROR</label>
+                <textarea id="descripcion" rows="4" placeholder="Detalla lo que sucedió. Si el sistema lanzó algún código de error, escríbelo aquí..." required></textarea>
+                <span class="support-line"></span>
+            </div>
+
+            <button type="submit" class="support-btn">
+                INICIAR DIAGNÓSTICO [ENVIAR]
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>

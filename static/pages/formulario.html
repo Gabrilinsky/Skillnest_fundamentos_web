@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="icon" href="../images/Cyberpunk_2077_logo.svg.ico">
+</head>
+<body>
+    <div class="cyber-container">
+        <div class="cyber-corner-tag">REG_OS_v4.02</div>
+        
+        <h2>CONTRATO DE MERCENARIO</h2>
+        <p class="cyber-subtitle">Ingresa tus datos en la red de la corporación</p>
+
+        <form action="#">
+            <div class="cyber-group">
+                <label for="alias">ALIAS / NOMBRE EN LA RED</label>
+                <input type="text" id="alias" placeholder="Ej. V, David, Rebecca..." required>
+                <span class="cyber-bar"></span>
+            </div>
+
+            <div class="cyber-group">
+                <label for="email">HOLOCORREO (EMAIL)</label>
+                <input type="email" id="email" placeholder="alias@netwatch.com" required>
+                <span class="cyber-bar"></span>
+            </div>
+
+            <div class="cyber-group">
+                <label for="cyberware">IMPLANTE PRINCIPAL (CYBERWARE)</label>
+                <select id="cyberware" required>
+                    <option value="" disabled selected hidden>Selecciona tu modificación...</option>
+                    <option value="mantis">Cuchillas Mantis (Arasaka)</option>
+                    <option value="sandevistan">Sandevistan (Dynalar)</option>
+                    <option value="monowire">Monocable (Biotechnica)</option>
+                    <option value="cyberdeck">Cyberdeck (NetWatch)</option>
+                </select>
+                <span class="cyber-bar"></span>
+            </div>
+
+            <div class="cyber-group">
+                <label for="detalles">DETALLES DE LA MISIÓN / BIOGRAFÍA</label>
+                <textarea id="detalles" rows="4" placeholder="Describe tus habilidades en el combate o hackeo..."></textarea>
+                <span class="cyber-bar"></span>
+            </div>
+
+            <button type="submit" class="cyber-btn">
+                ENVIAR DATOS A LA RED <span class="btn-glitch-effect">_</span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* Importar fuente futurista de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap');
+
+:root {
+    --cyber-yellow: #fcee0a;
+    --cyber-cyan: #00f0ff;
+    --cyber-dark: #0f1115;
+    --cyber-gray: #1e222b;
+    --cyber-text: #ffffff;
+}
+
+body {
+    background-color: var(--cyber-dark);
+    /* Fondo con una cuadrícula sutil estilo Cyberpunk */
+    background-image: linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--cyber-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor Principal */
+.cyber-container {
+    background-color: var(--cyber-gray);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    border: 3px solid var(--cyber-cyan);
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 240, 255, 0.3);
+    /* Esquina inferior derecha cortada en diagonal */
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+/* Etiqueta de la esquina superior derecha */
+.cyber-corner-tag {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    background-color: var(--cyber-cyan);
+    color: var(--cyber-dark);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--cyber-yellow);
+    margin: 0 0 5px 0;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.cyber-subtitle {
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Grupos del Formulario */
+.cyber-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.cyber-group label {
+    display: block;
+    color: var(--cyber-cyan);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+/* Estilos de los Inputs, Select y Textarea */
+.cyber-group input, 
+.cyber-group select, 
+.cyber-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+    color: var(--cyber-text);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Eliminar flecha por defecto de select y personalizar */
+.cyber-group select {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Efecto Focus (Cuando el usuario escribe) */
+.cyber-group input:focus, 
+.cyber-group select:focus, 
+.cyber-group textarea:focus {
+    outline: none;
+    border-color: var(--cyber-yellow);
+    box-shadow: 0 0 8px rgba(252, 238, 10, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Línea decorativa inferior animada */
+.cyber-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--cyber-yellow);
+    transition: width 0.3s ease;
+}
+
+.cyber-group input:focus ~ .cyber-bar,
+.cyber-group select:focus ~ .cyber-bar,
+.cyber-group textarea:focus ~ .cyber-bar {
+    width: 100%;
+}
+
+/* Botón Cyberpunk */
+.cyber-btn {
+    width: 100%;
+    background-color: var(--cyber-yellow);
+    color: var(--cyber-dark);
+    border: none;
+    padding: 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.1s ease;
+    /* Esquina superior izquierda cortada */
+    clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%, 0 15px);
+}
+
+.cyber-btn:hover {
+    background-color: var(--cyber-cyan);
+    color: var(--cyber-dark);
+    box-shadow: 0px 0px 15px rgba(0, 240, 255, 0.6);
+}
+
+.cyber-btn:active {
+    transform: scale(0.98);
+}
+
+.btn-glitch-effect {
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
