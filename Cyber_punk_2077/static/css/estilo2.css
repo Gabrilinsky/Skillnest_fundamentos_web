@@ -253,3 +253,15 @@ h1 {
     letter-spacing: 1px;
 }
 
+.registro {
+    color: #00b2bf;
+    background-color: #fcee0a;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.registro:hover {
+    color: #fcee0a;
+    background-color: #00f0ff;
+    transform: scale(1.1);
+}
