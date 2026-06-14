@@ -16,7 +16,7 @@ function cambiarArma(nombreClave) {
         mantis: {
             titulo: "MANTIS BLADES",
             descripcion: "Las cuchillas Cyberkon NT Mantis son fabricadas por Arasaka. Este implante te permite infligir más daño físico en el combate cuerpo a cuerpo y tiene una probabilidad del 10 al 20 % de aplicar un efecto de sangrado. Al usar las Cuchillas Mantis, puedes saltar hacia los enemigos que estén dentro de tu alcance para causar un daño masivo.",
-            imagen: "../images/mantis.jpg"
+            imagen: "../images/Mantis.jpg"
         },
         overwatch: {
             titulo: "OVERWATCH SNIPER",
