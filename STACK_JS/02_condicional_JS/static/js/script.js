@@ -1,6 +1,6 @@
 console.log("Conexión con js...")
 // Ejercicio 1: Sistema de descuento
-function calcularDescuento() {
+function ejercicio1() {
     let nombre = prompt("Ingrese el nombre del cliente:");
     let monto = parseFloat(prompt("Ingrese el monto de la compra:"));
     
@@ -18,8 +18,8 @@ function calcularDescuento() {
     let totalAPagar = monto - descuentoAplicado;
     
     alert("Cliente: " + nombre + 
-          "\nDescuento aplicado: " + descuentoPorcentaje + "% ($" + descuentoAplicado + ")" + 
-          "\nTotal a pagar: $" + totalAPagar);
+    "\nDescuento aplicado: " + descuentoPorcentaje + "% ($" + descuentoAplicado + ")" + 
+    "\nTotal a pagar: $" + totalAPagar);
 }
 
 // Ejercicio 2: Acceso a evento
@@ -36,7 +36,7 @@ function verificarAcceso() {
 }
 
 // Ejercicio 3: Clasificación de temperatura
-function clasificarTemperatura() {
+function temperatura() {
     let temperatura = parseFloat(prompt("Ingrese la temperatura actual:"));
     let mensaje = "";
     
