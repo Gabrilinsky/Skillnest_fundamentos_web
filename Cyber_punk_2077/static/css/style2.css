@@ -13,7 +13,7 @@ body {
     background-color: var(--cyber-dark);
     /* Fondo con una cuadrícula sutil estilo Cyberpunk */
     background-image: linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
     background-size: 20px 20px;
     font-family: 'Rajdhani', sans-serif;
     color: var(--cyber-text);
