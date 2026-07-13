@@ -1,128 +1,102 @@
-console.log("Conexión con js...")
-//Ejercicio 1: Calculadora de Envío
-//Enunciado
-//Una empresa de despacho cobra el envío dependiendo del peso del paquete.
+console.log("Conexión con js...");
 
-//Solicitar:
+// Ejercicio 1: Sistema de descuento
+function ejercicio1() {
+    let nombre = prompt("Ingrese el nombre del cliente:");
+    let monto = parseFloat(prompt("Ingrese el monto de la compra:"));
+    let descuentoPorcentaje = 0;
 
-//Nombre del cliente
-//Peso del paquete (kg)
-//Condiciones:
+    if (monto >= 50000) {
+        descuentoPorcentaje = 20;
+    } else if (monto >= 30000) {
+        descuentoPorcentaje = 10;
+    } else {
+        descuentoPorcentaje = 0;
+    }
 
-//Hasta 2 kg
-//Más de 2 kg y hasta 5 kg
-//Más de 5 kg y hasta 10 kg
-//Más de 10 kg
-//El programa debe indicar:
+    let descuentoAplicado = monto * (descuentoPorcentaje / 100);
+    let totalAPagar = monto - descuentoAplicado;
 
-//Nombre del cliente
-//Categoría del envío
-//Valor correspondiente al despacho
-function Ejercicio1 () {
-    let NombreCliente = prompt("Ingresar el nombre del cliente")
-    let peso = parseInt(prompt("Ingresar peso de paquete"))
-    let valorDespacho = 2000;
-    let mensaje = "";
-    // condiciones
-    if (peso > 0 && peso < 2 ){
-        mensaje = `Paqute pesa menos de 2kgs
-        \nValor despacho $${valorDespacho * peso}`
-    }else if (peso > 2 && peso <= 5) {
-        mensaje = `Paqute pesa: ${peso}
-        \nValor despacho $${valorDespacho * peso}`
-    }else if (peso > 5 && peso < 10) {
-    mensaje = `paquete pesa: ${peso}
-    \nvalor despacho $${valorDespacho * peso}`
-    }else if (peso > 10 && peso < 50) {
-    mensaje = `paquete pesa: ${peso}
-    \nvalor despacho $${valorDespacho * peso}`
+    alert("Cliente: " + nombre + "\nDescuento aplicado: " + descuentoPorcentaje + "% ($" + descuentoAplicado + ")" + "\nTotal a pagar: $" + totalAPagar);
 }
+
+// Ejercicio 2: Acceso a evento
+function verificarAcceso() {
+    let edad = parseInt(prompt("Ingrese su edad:"));
+    let acompañado = prompt("¿Viene acompañado por un adulto? (si / no)").toLowerCase();
+
+    // Corrección: Simplificado para validar "si" o "sí" (aunque con .toLowerCase() basta con "si" y "sí")
+    if (edad >= 18 || acompañado === "si" || acompañado === "sí") {
+        alert("Acceso permitido");
+    } else {
+        alert("Acceso denegado");
+    }
+}
+
+// Ejercicio 3: Clasificación de temperatura
+function temperatura() {
+    let temperatura = parseFloat(prompt("Ingrese la temperatura actual:"));
+    let mensaje = "";
+
+    // CORRECCIÓN: Los rangos lógicos con && estaban al revés (ej: no hay números menores a 10 y mayores a 24 a la vez).
+    if (temperatura < 10) {
+        mensaje = "Hace frío";
+    } else if (temperatura >= 10 && temperatura < 25) {
+        mensaje = "Temperatura agradable";
+    } else if (temperatura >= 25 && temperatura <= 40) {
+        mensaje = "Hace calor";
+    } else {
+        mensaje = "Temperatura muy alta";
+    }
+
+    // CORRECCIÓN: Una temperatura no puede ser menor a -2 Y mayor a 60 al mismo tiempo. Se cambia por OR (||).
+    if (temperatura <= -2 || temperatura >= 60) {
+        mensaje += "\n¡Alerta!: Temperatura extrema";
+    }
+
     alert(mensaje);
 }
 
+// Ejercicio 4: Verificación de administrador
+function verificarAdministrador() {
+    let usuario = prompt("Ingrese su nombre de usuario:");
+    let contrasena = prompt("Ingrese su contraseña:");
 
-
-
-
-
-
-//Ejercicio 2: Acceso a Biblioteca
-//Enunciado
-//Una biblioteca posee dos tipos de usuarios:
-
-//Estudiante
-//Profesor
-//Solicitar:
-
-//Tipo de usuario
-//Cantidad de libros solicitados
-//Condiciones:
-
-//Cada tipo de usuario posee un límite distinto de préstamos.
-
-//El programa debe indicar:
-
-//Si el préstamo está permitido.
-//Si supera el límite permitido.
-//Mostrar un mensaje diferente según el tipo de usuario.
-//Utilizar operadores lógicos para realizar las validaciones.
-function Ejercicio2 () {
-    let usuario = "Estudiante"
-    let usuario2 = "Profesor"
-    let CantidadDeLibros = "2"
-
-    let límiteEstudiante = "2"
-    let límiteProfesor = "4"
-
+    if (usuario === "admin" && contrasena === "12345") {
+        alert("Bienvenido administrador");
+    } else if (usuario === "admin" && contrasena !== "12345") {
+        alert("Contraseña incorrecta");
+    } else {
+        alert("Usuario no encontrado");
+    }
 }
 
+// Ejercicio 5: Sistema de aprobación
+function evaluarEstudiante() {
+    let nombre = prompt("Ingrese el nombre del estudiante:");
+    let nota1 = parseFloat(prompt("Ingrese la Nota 1:"));
+    let nota2 = parseFloat(prompt("Ingrese la Nota 2:"));
+    let nota3 = parseFloat(prompt("Ingrese la Nota 3:"));
+    
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    let resultado = "";
 
-//Ejercicio 3: Clasificación Deportiva
-//Enunciado
-//Solicitar:
+    // CORRECCIÓN: Se ajustaron los rangos. En el "Reprobado" tenías el mínimo y el máximo invertidos.
+    if (promedio >= 6.0 && promedio <= 7.0) {
+        resultado = "Aprobado con excelencia";
+    } else if (promedio >= 4.0 && promedio < 6.0) {
+        resultado = "Aprobado";
+    } else if (promedio >= 1.0 && promedio < 4.0) { // Antes decía >= 3.9 && <= 1.0 (imposible)
+        resultado = "Reprobado";
+    } else {
+        resultado = "Nota fuera de rango válido";
+    }
 
-//Nombre del participante
-//Edad
-//Clasificar al participante según su edad.
+    let mensajeFinal = "Estudiante: " + nombre + "\nPromedio: " + promedio.toFixed(1) + "\nEstado: " + resultado;
 
-//Debe existir al menos cuatro categorías distintas.
+    if (nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0) {
+        mensajeFinal += "\nDebe asistir a reforzamiento.";
+    }
 
-//Finalmente mostrar:
-
-//Nombre
-//Edad
-//Categoría asignada
-//Ejercicio 4: Sistema de Bonificación
-//Enunciado
-//Una empresa entrega bonos según los años trabajados.
-
-//Solicitar:
-
-//Nombre del trabajador
-//Años de servicio
-//Clasificar según distintos rangos de antigüedad.
-
-//Mostrar:
-
-//Nombre
-//Nivel de antigüedad
-//Mensaje indicando si recibe o no bonificación.
-//Ejercicio 5: Evaluación de Velocidad
-//Enunciado
-//Solicitar:
-
-//Nombre del conductor
-//Velocidad registrada
-//Condiciones:
-
-//Clasificar la velocidad en distintos rangos.
-
-//Además:
-
-//Si supera un determinado límite, mostrar un mensaje indicando que ha excedido la velocidad permitida.
-
-//Mostrar:
-
-//Nombre del conductor
-//Velocidad
-//Clasificación obtenida
+    alert(mensajeFinal);
+}
