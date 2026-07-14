@@ -131,3 +131,21 @@ function Puntaje() {
 // ...
 // Tienes 1 notificación nueva.
 // No tienes notificaciones pendientes.
+
+function gestionarNotificaciones() {
+    let notificaciones = 5; 
+
+    while (notificaciones > 0) {
+        if (notificaciones === 1) {
+            alert("Tienes 1 notificación nueva.");
+        } else {
+            alert("Tienes " + notificaciones + " notificaciones nuevas.");
+        }
+        
+        notificaciones--; 
+    }
+
+    
+    alert("No tienes notificaciones pendientes.");
+}
+
