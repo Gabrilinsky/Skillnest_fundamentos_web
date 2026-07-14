@@ -56,12 +56,12 @@
 // Esta asignación te ayudará a mejorar tu lógica y a escribir código más eficiente.
 
 function Practica(){
-    for (let i = 1; 1 <= 100; i++) {
-        if (i % 3 == 0 && i % 5 == 0){
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 === 0){
             alert("Fizzbuzz")
-        }else if (i % 3 == 0 && i % 5 !== 0 ){
+        }else if (i % 3 === 0 ){
             alert("Fizz")
-        }else if (i % 3 == 0 && i % 5 === 0 ){
+        }else if (i % 5 === 0 ){
             alert("Buzz")
         } else {
             alert(i)
@@ -89,13 +89,12 @@ for (let i = 1; i <= 10; i++) {
 // Cargando... 100%
 // Carga completa.​
 
-function Interacción(){
+function Gamer(){
     alert("Iniciando simulación...")
 for (let i = 1; i <= 100; i += 10) {
-    alert("Cargando..." + i + "%"){
-        
-    }
+    alert("Cargando..." + i + "%")
 } 
+alert("Carga completa.")
 }
 
 // 🛍️ Simulación de descuento progresivo en una tienda: Una tienda en línea ofrece un descuento progresivo en una promoción especial. El primer producto tiene un 5% de descuento, el segundo un 10%, el tercero un 15%, y así sucesivamente hasta el quinto producto con un 25%. Escribe un programa que calcule y muestre los descuentos aplicados a cada producto. Ejemplo de salida esperada:
@@ -104,9 +103,28 @@ for (let i = 1; i <= 100; i += 10) {
 // Producto 3 - Descuento aplicado: 15%
 // Producto 4 - Descuento aplicado: 20%
 // Producto 5 - Descuento aplicado: 25%​​
+
+function Descuento(){
+for (let i = 1; i <= 5; i++) {
+    let descuento = i * 5
+    alert("Producto " + i + " - Descuento aplicado: " + descuento + "%")
+} 
+}
+
 // 🎮 Calcular el total de puntos en un videojuego: Un jugador gana 50 puntos cada vez que completa un nivel. Escribe un programa que calcule la puntuación total después de 5 niveles usando un bucle. Ejemplo de salida esperada:
 // Puntos acumulados: 250​
-// ​
+function Puntaje() {
+    let puntosAcumulados = 0; 
+
+    for (let nivel = 1; nivel <= 5; nivel++) { 
+        puntosAcumulados += 50;
+        alert("Nivel " + nivel + " completado. Puntos actuales: " + puntosAcumulados);
+    }
+
+
+    alert("Puntos acumulados totales: " + puntosAcumulados);
+}
+
 // 🔔 Contador de notificaciones en una app: Imagina que una aplicación de mensajería muestra un contador de notificaciones pendientes. Escribe un programa que muestre un mensaje con la cantidad de notificaciones pendientes y las marque como leídas una por una hasta llegar a 0. Ejemplo de salida esperada:
 // Tienes 5 notificaciones nuevas.
 // Tienes 4 notificaciones nuevas.
