@@ -145,14 +145,14 @@ function ejercicio3 () {
 function ejercicio4() {
     // 1. Solicitar los datos al usuario
     let nombre = prompt("Ingrese el nombre del trabajador:");
-    let anosServicio = parseInt(prompt("Ingrese los años de servicio:"));
+    let añosServicio = parseInt(prompt("Ingrese los años de servicio:"));
     
     // Variables para guardar la clasificación y el estado del bono
     let nivelAntiguedad = "";
     let recibeBono = "";
 
     
-    if (anosServicio < 2) {
+    if (añosServicio < 2) {
         nivelAntiguedad = "Novato";
         recibeBono = "No recibe bonificación.";
     } else if (anosServicio >= 2 && anosServicio <= 5) {
@@ -220,9 +220,9 @@ function evaluarVelocidad() {
 
     // Mostrar el resultado final
     let mensajeFinal = "Conductor: " + conductor + 
-                        "\nVelocidad: " + velocidad + " km/h" + 
-                        "\nClasificación: " + clasificacion + 
-                        mensajeExceso;
+        "\nVelocidad: " + velocidad + " km/h" + 
+        "\nClasificación: " + clasificacion + 
+        mensajeExceso;
 
     alert(mensajeFinal);
 }
