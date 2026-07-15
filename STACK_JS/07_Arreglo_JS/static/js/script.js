@@ -86,7 +86,8 @@ function edad(){
 let edades = [15,18,20,14,25]
 let edad = edades[edades.length - 5];
 let edad1 = edades[edades.length - 1];
-alert(edad + "/" + edad1)
+alert(edad + "/" + edad1 + "/" + edades.length)
+
 }
 // ---
 
