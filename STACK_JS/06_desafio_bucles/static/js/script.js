@@ -104,12 +104,13 @@ alert("Carga completa.")
 // Producto 4 - Descuento aplicado: 20%
 // Producto 5 - Descuento aplicado: 25%​​
 
-function Descuento(){
-for (let i = 1; i <= 5; i++) {
-    let descuento = i * 5
-    alert("Producto " + i + " - Descuento aplicado: " + descuento + "%")
-} 
+function Producto() {
+    for (let i = 1; i <= 5; i++) {
+        let valorProducto = parseInt(prompt(`Ingrese valor del producto`));
+        alert(`Producto ${i} - Descuento aplicado: ${i * 5}\%\nValor final:${valorProducto - (valorProducto * (i * 0.05))}`);
+    }
 }
+
 
 // 🎮 Calcular el total de puntos en un videojuego: Un jugador gana 50 puntos cada vez que completa un nivel. Escribe un programa que calcule la puntuación total después de 5 niveles usando un bucle. Ejemplo de salida esperada:
 // Puntos acumulados: 250​
