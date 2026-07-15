@@ -1,4 +1,4 @@
-console.log("Conexión con JS...")
+console.log ("Conexión con JS...")
 function Nombres(){
 
 let nombre1 = "Ana";
@@ -82,12 +82,12 @@ Eliminado += " - " + listaTareas.shift();
 // - Última edad.
 // - Cantidad de elementos.
 
-let Edad = "15"
-let Edad_1 = "18"
-let Edad_2 = "20"
-let Edad_3 = "14"
-let Edad_4 = "25"
-
+function edad(){
+let edades = [15,18,20,14,25]
+let edad = edades[edades.length - 5];
+let edad1 = edades[edades.length - 1];
+alert(edad + "/" + edad1)
+}
 // ---
 
 // ## Ejercicio 2
@@ -96,7 +96,12 @@ let Edad_4 = "25"
 
 // Mostrar todos utilizando un ciclo `for`.
 
-
+function Orden(){
+let Nombres =["Ana","Juan","Alexander","Jake"]
+for (let i = 0; i < Nombres.length; i++){
+    alert(i)
+}
+}
 
 // ---
 
