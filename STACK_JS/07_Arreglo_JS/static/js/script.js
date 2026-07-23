@@ -28,12 +28,10 @@ alert(mensaje)
 function Frutas(){
 let frutas = ["Manzana", "Pera", "Kiwi", "Sandía"];
 alert(frutas.length);
-} 
-
-
-let frutas = ["Manzana", "Pera", "Kiwi", "Sandía"];
 let ultima = frutas[frutas.length - 1]
 alert(ultima)
+}
+
 //variable.length -1 siempre trae el ultimo
 
 //Desafio
@@ -65,6 +63,100 @@ Eliminado += " - " + listaTareas.shift();
 } 
     
 
+function notas(){
+
+let notas = [6.2,5.8,4.1,7.0];
+let suma = 0;
+
+for(let i= 0; i < notas.length; i++)
+    suma += notas[i];
+{
+
+    alert(`La suma acumulada es: ${suma}`);
+    let promedio = suma / notas.length;
+    alert(`El promedio de las notas: ${notas.join(" / ")}\nPromedio: ${promedio}`)
+}
+}
+
+function Elementos(){
+    let ventas = [10000, 5000, 12000, 8000]
+    let total = 0;
+
+    for(let i = 0; i < ventas.length; i++) {
+        total += ventas[i]
+        alert(`El resultado final es: ${total}`)
+    }
+
+}
+// Condicional de bucles
+function edades(){
+let edades = [12, 15, 18, 20, 25]
+let mayores =[]
+for (let i = 0; i < edades.length; i++)
+    if(edades[i] >= 18){
+        mayores.push(edades[i]);
+    }
+    }
+
+
+
+
+
+
+function Ambos(){
+
+let numeros = [10,35,7,90,22, 90];
+let menor = numeros[0];
+let mayor = numeros[0]
+
+for(let i= 1; i < numeros.length; i++){
+
+    if(numeros[i] < menor){
+    menor = numeros[i]
+    }else if (numeros[i] > mayor) {
+        mayor = numeros[i]
+    }else{numeros[i] > mayor}
+    alert(`Valor que no afecta: ${numeros[i]}`)
+    }
+
+alert(` Los numeros ${numeros.join}
+    el menor es: ${menor}
+    el mayor es: ${mayor}`);
+
+    alert(` Los numeros ${numeros.join}
+    el menor es: ${menor}
+    el mayor es: ${mayor}`);
+}
+
+function calcularVentas(){
+    let ventas = [5000, 8000, 12000, 3000, 1000, 9000, 4000, ]
+    let total = 0;
+    let final = ventas[0]
+
+    let ValorEliminado = ventas.pop()
+
+    let valor1 = parseInt(prompt("Ingrese primer valor"))
+    let valor2 = parseInt(prompt("Ingrese segundo valor"))
+    
+
+for (let i = 0; i < ventas.length; i++)
+    ventas.push(valor1, valor2)
+total += ventas[i];
+if (ventas[i] = final){
+    final = ventas[i]
+if (ventas[i] >= 1000){
+
+}
+
+}
+alert("total:", total)
+alert("Mayor:", final)
+
+}
+    
+    
+    
+
 
 // # 💻 Ejercicios
 
@@ -86,7 +178,9 @@ function edad(){
 let edades = [15,18,20,14,25]
 let edad = edades[edades.length - 5];
 let edad1 = edades[edades.length - 1];
-alert(edad + "/" + edad1 + "/" + edades.length)
+alert(edad)
+alert(edad1)
+alert(edades.length)
 
 }
 // ---
@@ -103,6 +197,8 @@ for (let i = 0; i < Nombres.length; i++){
     alert(i)
 }
 }
+
+
 
 // ---
 
@@ -140,6 +236,10 @@ for (let i = 0; i < Nombres.length; i++){
 
 // - Cuántos son pares.
 // - Cuántos son impares.
+
+let five =["2,3,4,5,6,7,8,9,10,11"]
+
+
 
 // ---
 
