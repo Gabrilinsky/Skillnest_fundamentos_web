@@ -42,7 +42,7 @@ let hamburguesaEspecial = {
 
 
 //Acceder al pan
-console.log(hamburguesaEspecial.pan)
+alert(hamburguesaEspecial.pan)
 hamburguesaEspecial.mostrarIngredientes();
 
 //Objeto con metodo automovil
