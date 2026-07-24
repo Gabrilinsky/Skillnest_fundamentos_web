@@ -22,13 +22,13 @@ let hamburguesaEspecial = {
 
     mostrarIngredientes:function(){
 
-        alert(`"Pan:",${this.pan}`);
+        alert(`Pan: ${this.pan}`);
 
-        alert(`"Carne:",${this.carne}`);
+        alert(`Carne: ${this.carne}`);
 
-        alert(`"Queso:",${this.queso}`)
+        alert(`Queso: ${this.queso}`)
 
-        alert(`"Extras:",${this.extras.join(", ")}`);
+        alert(`Extras: ${this.extras.join(", ")}`);
 
     }
 
@@ -70,19 +70,19 @@ let automovil ={
 
     piezasdeauto: function(){
 
-        alert(`"auto:", ${this.auto}`)
+        alert(`Auto: ${this.auto}`)
 
-        alert(`"modelo:", ${this.modelo}`)
+        alert(`Modelo: ${this.modelo}`)
 
-        alert(`"Motor:",${this.Motor}`)
+        alert(`Motor: ${this.Motor}`)
 
-        alert(`"turbo:",${this.Turbo}`)
+        alert(`Turbo: ${this.Turbo}`)
 
-        alert(`"Oxido De Nitroso",${this.OxidoNitroso}`)
+        alert(`Oxido De Nitroso: ${this.OxidoNitroso}`)
 
-        alert(`"Escape:",${this.Escape}`)
+        alert(`Escape: ${this.Escape}`)
 
-        alert(`"Extras:",${this.extras.join("\n")}`);
+        alert(`Extras: ${this.extras.join("\n")}`);
 
         
     }
