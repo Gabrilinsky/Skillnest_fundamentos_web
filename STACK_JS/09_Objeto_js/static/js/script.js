@@ -70,28 +70,36 @@ let automovil ={
 
     piezasdeauto: function(){
 
-        alert(`Auto: ${this.auto}`)
+alert(`Auto: ${this.auto}
+Motor: ${this.Motor}
+Modelo: ${this.modelo}
+Turbo: ${this.Turbo}
+Oxido De Nitroso: ${this.OxidoNitroso}
+Escape: ${this.Escape}
+Extras: ${this.extras.join("\n")}`);
 
-        alert(`Modelo: ${this.modelo}`)
-
-        alert(`Motor: ${this.Motor}`)
-
-        alert(`Turbo: ${this.Turbo}`)
-
-        alert(`Oxido De Nitroso: ${this.OxidoNitroso}`)
-
-        alert(`Escape: ${this.Escape}`)
-
-        alert(`Extras: ${this.extras.join("\n")}`);
 
         
     }
 };
 
-alert(automovil.modelo)
         automovil.piezasdeauto()
 
+        //objeto de una casa
 
+        let casa ={
+
+            Habitación:"5",
+            Baño: "3",
+            dirección: "Santiago 1420",
+        
+        mostrarcasa: function(){
+        alert(`Habitación: ${this.Habitación}
+            Baño:${this.Baño}
+            Dirección:${this.dirección}`)
+        }
+
+    }
 
 
 
