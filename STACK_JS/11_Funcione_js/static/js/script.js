@@ -37,3 +37,9 @@ alert(`El número mayor entre, ${numero1}, y ${numero2},
 //Tarea 
 // Crea una función que reciba 3 parametros, a,b y c. debe sumar
 // Debe sumar
+
+function sumar(a,b,c){
+    if (a > b > c){
+    return a + b - c
+    }
+}l
