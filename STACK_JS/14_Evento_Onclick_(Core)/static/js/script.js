@@ -22,3 +22,7 @@ botones.forEach((boton) => {
     Contar.textContent = likes;
   });
 }); 
+
+function Perfil(){
+    alert("Entrar al Perfil")
+}
