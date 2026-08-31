@@ -2,6 +2,7 @@ const boton = document.getElementById("miBoton");
 
 boton.addEventListener("mouseover", function () {
    console.log("El ratón está sobre el botón");
+   boton.style.backgroundColor = "blue";
 });
 
 boton.addEventListener("mouseout", function () {
