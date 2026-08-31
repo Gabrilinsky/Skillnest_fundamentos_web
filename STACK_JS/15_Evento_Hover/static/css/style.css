@@ -11,6 +11,7 @@ body {
    height: 100vh;
    background-color: #f4f4f4;
    font-family: Arial, sans-serif;
+   gap: 20px;
 }
 
 #miBoton {
@@ -25,6 +26,40 @@ body {
 }
 
 #miBoton:hover {
+   background-color: #ff4d94;
+   transform: scale(1.1);
+}
+
+
+
+#Boton {
+   padding: 12px 24px;
+   font-size: 18px;
+   background-color: #ff7eb3;
+   color: white;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   border-radius: 5px;
+}
+
+#Boton:hover {
+   background-color: #ff4d94;
+   transform: scale(1.1);
+}
+
+#mi {
+   padding: 12px 24px;
+   font-size: 18px;
+   background-color: #ff7eb3;
+   color: white;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   border-radius: 5px;
+}
+
+#mi:hover {
    background-color: #ff4d94;
    transform: scale(1.1);
 }
