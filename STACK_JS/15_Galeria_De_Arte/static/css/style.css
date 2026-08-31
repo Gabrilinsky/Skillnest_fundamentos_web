@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1ed;
+    margin: 0;
+    padding: 20px;
+}
+
+.header{
+    padding: 20px;
+    background-color: #4a3f35;
+    display: flex;
+    gap: 20px;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+   
+}
+
+
+.boton{
+    background-color: #d9c7b8;
+    color: #b6a598;
+    text-decoration: none; /* quita subrayado */
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.titulo{
+    color: white;
+    margin: 0;
+}
+
+.boton:hover{
+    background-color: rgb(233, 70, 6);
+}
+
+.contenedor{
+    width: 100%;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    padding: 15px;        
+    gap: 8px;              
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor h1 {
+    font-size: 1.2rem;     
+    margin: 0 0 4px 0;
+}
+
+
+.contenedor h2 {
+    font-size: 0.85rem;    
+    margin: 0;
+    font-weight: normal;
+}
+
+.contenedor p {
+    font-size: 0.85rem;    
+    margin: 4px 0;
+    line-height: 1.3;
+}
+
+.buscador-container {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+}
+
+.buscador-container input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+.boton1{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #fe7973;
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;      
+    font-size: 0.8rem;      
+    border-radius: 6px;
+    border: none;
+    margin-top: 5px;
+}
+
+.boton1:hover{
+    background-color: #d64139;
+}
+
+.boton2{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #01d3c5;
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;      
+    font-size: 0.8rem;      
+    border-radius: 6px;
+    border: none;
+    margin-top: 5px;
+}
+
+.contenedor_Bienvenido{
+    text-align: center;
+    align-items: center;
+  
+}
+
+.principal {
+    display: flex;
+    gap: 25px;
+    width: 200%;
+    max-width: 950px;    
+    margin: 0 auto;      
+    align-items: flex-start;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;              
+}
+
+.derecha {
+    flex: 1;              
+}
+
+.Parrafo{
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.Imagen{
+    border: 5px solid #d9c7b8;
+}
