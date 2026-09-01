@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.header{
+    padding: 20px;
+    background-color: #3f3f3f;
+    display: flex;
+    gap: 20px;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+   
+}
+
+
+.titulo{
+    color: white;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 79%;
+}
+
+.row img{
+    height: 80px;
+    width: 80px;
+}
+
+.tarjeta-conexiones {
+    width: 450px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px 20px 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #d6d6d6;
+}
+
+.cubo{
+    width: 450px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px 20px 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
