@@ -1,16 +1,22 @@
-// 1. Guardar las rutas de las imágenes en variables
+// 1. Definir los datos de la imagen y texto original y nuevo
 const imagenOriginal = "static/images/campo-de-trigo-con-cipreses.png";
-const imagenNueva = "static/images/noche-estrellada-sobre-el-ródano.png"; // <-- Ajusta el nombre de tu segunda imagen
+const textoOriginal = "Campo de trigo con cipreses, Vicent van Gogh (1889)";
 
-// 2. Seleccionar la imagen por el ID "Pintura" definido en tu HTML
+const imagenNueva = "static/images/noche-estrellada-sobre-el-ródano.png";
+const textoNuevo = "La noche estrellada sobre el Ródano, Vincent van Gogh (1888)";
+
+// 2. Seleccionar los elementos mediante sus IDs
 const pintura = document.getElementById("Pintura");
+const texto = document.getElementById("Texto");
 
-// 3. Cambiar la imagen al pasar el cursor sobre ella
+// 3. Cambiar imagen y texto al pasar el cursor (hover)
 pintura.addEventListener("mouseenter", () => {
   pintura.src = imagenNueva;
+  texto.textContent = textoNuevo;
 });
 
-// 4. Restaurar la imagen original al quitar el cursor
+// 4. Restaurar la imagen y texto original al quitar el cursor
 pintura.addEventListener("mouseleave", () => {
   pintura.src = imagenOriginal;
+  texto.textContent = textoOriginal;
 });
