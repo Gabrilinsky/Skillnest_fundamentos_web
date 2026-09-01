@@ -1,24 +1,22 @@
-let boton = document.getElementById("Iniciar");
+// 1. Definir los datos de la imagen y texto original y nuevo
+const imagenOriginal = "static/images/Denji.jpg";
+const textoOriginal = "Denji";
 
-boton.addEventListener("click", function () {
-    if (this.innerText === "Iniciar Sesión") {
-        this.innerText = "Cerrar Sesión";
-    } else {
-        this.innerText = "Iniciar Sesión";
-    }
+const imagenNueva = "static/images/Chainsawman.jpg";
+const textoNuevo = "Chainsaw Man";
+
+// 2. Seleccionar los elementos mediante sus IDs
+const pintura = document.getElementById("Pintura");
+const texto = document.getElementById("Texto");
+
+// 3. Cambiar imagen y texto al pasar el cursor (hover)
+pintura.addEventListener("mouseenter", () => {
+  pintura.src = imagenNueva;
+  texto.textContent = textoNuevo;
 });
 
-
-
-const botones = document.querySelectorAll(".boton1");
-
-botones.forEach((boton) => {
-  boton.addEventListener("click", function () {
-    const Contar = boton.querySelector("span:first-child");
-
-    let likes = parseInt(Contar.textContent);
-    likes += 1;
-
-    Contar.textContent = likes;
-  });
-}); 
+// 4. Restaurar la imagen y texto original al quitar el cursor
+pintura.addEventListener("mouseleave", () => {
+  pintura.src = imagenOriginal;
+  texto.textContent = textoOriginal;
+});
