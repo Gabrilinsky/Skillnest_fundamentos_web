@@ -1,43 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" contnet="Gabriel Naranjo" />
-    <title>Me gusta</title>
-    <link rel="stylesheet" href="static/css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="titulo">Social Like</h1>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="Gabriel Naranjo">
+  <title>Social Like</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="titulo">Social Like</h1>
+  </header>
 
-    <main class="principal">
-      <section class="izquierda">
-        <div class="tarjeta-conexiones">
-          <div class="img">
-         <h1 id="Texto" class = "Parrafo">Denji</h1>
-         <img 
-         src= "static/images/Denji.jpg" 
-         alt= "Denji"
-         id= "Pintura"
-         class="perfil">
-           <button >Mi perfil</button>
-        </div>
-        </div>
-        </section>
+<div class="contenido">
+  <h1 class="subtitulo">Ultimas Publicaciones</h1>
+</div>
 
-        <section>
-          
-        </section>
-    </main>
+<main class="principal">
+  <section class="izquierda">
+    <div class="tarjeta-conexion">
+      <img src="static/images/Denji.jpg" alt="Denji" class="perfil">
+      <h2 id="Texto">Denji</h2>
+      <button class="btn">Mi perfil</button>
+    </div>
+  </section>
+
+<section class="derecha">
+  <div class="contenedor">
+    <div class="caja">
+      <h2>Aki</h2>
+      <div class="like">
+        <span class="likes">0 Like(s)</span>
+        <button class="boton">Like</button>
+      </div>
+    </div>
+    <p>Acabo de configurar este nuevo <a href="https://www.reddit.com/r/discordapp/comments/gxc00q/discord_server_bot_obtaining_peoples_info/?tl=es-es&rdt=65037">bot de discord</a>, cuéntame que opinan ustedes.</p>
+  </div>
+
+  <div class="contenedor">
+    <div class="caja">
+      <h2>Pochita</h2>
+      <div class="like">
+        <span class="likes">0 Like(s)</span>
+        <button class="boton">Like</button>
+      </div>
+    </div>
+    <p>Acabo de leer este <a href="https://www.normaeditorial.com/catalogo/manga/serie/chainsaw-man">nuevo comic.</a> Denle un vistazo.</p>
+  </div>
+
+    <div class="contenedor">
+    <div class="caja">
+      <h2>Power</h2>
+      <div class="like">
+        <span class="likes">0 Like(s)</span>
+        <button class="boton">Like</button>
+      </div>
+    </div>
+    <p>No puedo dejar de escuchar este <a href="https://www.youtube.com/watch?v=_0kAmrBlZQ0">album.</a>  ¿A quién más le gusta?.</p>
+  </div>
+</section>
+</main>
+<script src="static/js/script.js"></script>
 </body>
-
-</html>
- 
-    </main>
-    
-
-    <script src="static/js/script.js"></script>
-  </body>
 </html>

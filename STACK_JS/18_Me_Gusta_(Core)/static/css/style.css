@@ -1,87 +1,136 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
 }
 
-.header{
-    padding: 20px;
-    background-color: #3f3f3f;
-    display: flex;
-    gap: 20px;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 30px;
-   
+/* Header */
+.header {
+  padding: 15px 30px;
+  background-color: #3f3f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.titulo{
-    color: white;
-    margin: 0;
+.titulo {
+  color: white;
+  margin: 0;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 79%;
+.contenido {
+  max-width: 1000px;
+  margin: 20px auto 0 auto;
+  padding: 0 20px;
 }
 
-.row img{
-    height: 80px;
-    width: 80px;
+.subtitulo {
+  font-size: 24px;
+  margin: 0 0 10px 0;
 }
 
-.tarjeta-conexiones {
-    width: 450px;
-    border-radius: 12px;
-    text-align: center;
-    margin: 40px auto;
-    padding: 40px 20px 30px 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    border: 5px solid #d6d6d6;
+/* Layout Flexbox Principal */
+.principal {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
 }
 
-.cubo{
-    width: 450px;
-    border-radius: 12px;
-    text-align: center;
-    margin: 40px auto;
-    padding: 40px 20px 30px 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+/* Columna Izquierda (Perfil) */
+.izquierda {
+  flex: 1;
 }
 
-.perfil{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    top: 33%;
-    left: 27,9%;
-}
-.img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px 10px 0px 0px;
-    height: 150px;
+.tarjeta-conexion {
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 2px solid #2d2d2d;
 }
 
-img.perfil {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #ffffff;
-    margin-top: 15px;
-    background-color: #e0e0e0;
+.perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Columna Derecha (Posts) */
+.derecha {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contenedor {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+  background-color: white;
+  border-radius: 12px;
+  border: 2px solid #2d2d2d;
+}
+
+/* Encabezado del Post */
+.caja {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caja h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.likes {
+  font-weight: bold;
+}
+
+/* Botones */
+.btn {
+  background-color: #2b9bbd;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #1f728c;
+}
+
+.boton {
+  background-color: #ffd460;
+  color: black;
+  border: 2px solid #2d2d2d;
+  padding: 6px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 2px 0px #2d2d2d;
+}
+
+.boton:hover {
+  background-color: #f7c844;
 }
