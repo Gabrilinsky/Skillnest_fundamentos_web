@@ -1,41 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Gabriel Naranjo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Gabriel Naranjo" />
     <title>Taco Palace</title>
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
-<body>
-    <img src="static/images/logo.png" alt="Logo">
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <section class="Barra">
+      <img src="static/images/logo.png" alt="Logo" />
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <h1 class="navbar-brand">Taco</h1>
+          <h1 class="navbar">Palace</h1>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn" type="submit">Search</button>
+            <img src="static/images/carrito.png" alt="Carrito" /> <span>0</span>
+          </form>
+        </div>
+      </nav>
+    </section>
 
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <h1 class="navbar-brand">Taco</h1> <h1 class="navbar">Palace</h1>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn" type="submit">Search</button>
-      <img src="static/images/carrito.png" alt="Carrito"> <span>0</span>
-    </form>
-  </div>
-</nav>
-<section class="Cuadros">
-<img class="caja" src="static/images/enchiladas.jpg" alt="Enchiladas">
-<img class="caja" src="static/images/tacos.jpg" alt="Tacos">
-<img class="caja" src="static/images/flautas.jpg" alt="Flautas">
-<img class="caja" src="static/images/gorditas.jpg" alt="Gorditas">
-<img class="caja" src="static/images/tostadas.jpg" alt="Tostadas">
-<img class="caja" src="static/images/enfrijoladas.jpg" alt="Enfrijoladas">
-</section>
+    <section class="Cuadros">
+      <div class="comida">
+        <img class="caja" src="static/images/enchiladas.jpg" alt="Enchiladas" />
+        <p>Enchiladas</p>
+      </div>
+      <div class="comida">
+        <img class="caja" src="static/images/tacos.jpg" alt="Tacos" />
+        <p>Tacos</p>
+      </div>
+      <div class="comida">
+        <img class="caja" src="static/images/flautas.jpg" alt="Flautas" />
+        <p>Flautas</p>
+      </div>
+      <div class="comida">
+        <img class="caja" src="static/images/gorditas.jpg" alt="Gorditas" />
+        <p>Gorditas</p>
+      </div>
+      <div class="comida">
+        <img class="caja" src="static/images/tostadas.jpg" alt="Tostadas" />
+        <p>Tostadas</p>
+      </div>
+      <div class="comida">
+        <img
+          class="caja"
+          src="static/images/enfrijoladas.jpg"
+          alt="Enfrijoladas"
+        />
+        <p>Enfrijoladas</p>
+      </div>
+    </section>
 
+    <section class="caja">
+      <h1>La mejor variedad en platillos de comida mexicana</h1>
+      <p>Contamos con</p>
+      <span class="linea">servicio</span> <span>a</span>
+      <p class="amarillo">Domicilio</p>
+      <img class="caja1" src="static/images/comida-mexicana.jpg" alt="Mexico" />
+    </section>
 
-<section class="caja">
-  <h1>La mejor variedad en platillos de comida mexicana</h1>
-</section>
-<p>Contamos con</p> 
-<p class="linea">servicio</p> <p>a</p> <p class="amarillo">Domicilio</p>
-
-<script src="static/js/script.js"></script>
-</body>
+    <script src="static/js/script.js"></script>
+  </body>
 </html>
