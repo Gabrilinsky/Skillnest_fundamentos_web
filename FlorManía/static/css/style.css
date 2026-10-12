@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Barra {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 40px;
+background-color: #d5a6bc;
+width: 100%;
+}
+
+.nombre-titulo{
+    font-size: 40px;
+}
+
+.Flor{
+    color: white;
+}
+
+.Manía{
+    color: black;
+}
+
+.nav{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.Boton{
+    font-size: 1.5rem;
+    background-color: #d5a6bc;
+}
+
+.nav a{
+    color: black;
+    font-size: 40px;
+}
