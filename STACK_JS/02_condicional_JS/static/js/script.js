@@ -1,11 +1,11 @@
-console.log("Conexión con js...")
+console.log("Conexión con js...");
+
 // Ejercicio 1: Sistema de descuento
 function ejercicio1() {
     let nombre = prompt("Ingrese el nombre del cliente:");
     let monto = parseFloat(prompt("Ingrese el monto de la compra:"));
-    
     let descuentoPorcentaje = 0;
-    
+
     if (monto >= 50000) {
         descuentoPorcentaje = 20;
     } else if (monto >= 30000) {
@@ -13,21 +13,19 @@ function ejercicio1() {
     } else {
         descuentoPorcentaje = 0;
     }
-    
+
     let descuentoAplicado = monto * (descuentoPorcentaje / 100);
     let totalAPagar = monto - descuentoAplicado;
-    
-    alert("Cliente: " + nombre + 
-    "\nDescuento aplicado: " + descuentoPorcentaje + "% ($" + descuentoAplicado + ")" + 
-    "\nTotal a pagar: $" + totalAPagar);
+
+    alert("Cliente: " + nombre + "\nDescuento aplicado: " + descuentoPorcentaje + "% ($" + descuentoAplicado + ")" + "\nTotal a pagar: $" + totalAPagar);
 }
 
 // Ejercicio 2: Acceso a evento
 function verificarAcceso() {
     let edad = parseInt(prompt("Ingrese su edad:"));
     let acompañado = prompt("¿Viene acompañado por un adulto? (si / no)").toLowerCase();
-    
-    // Usamos el operador lógico OR (||) ya que basta con que cumpla una condición
+
+    // Corrección: Simplificado para validar "si" o "sí" (aunque con .toLowerCase() basta con "si" y "sí")
     if (edad >= 18 || acompañado === "si" || acompañado === "sí") {
         alert("Acceso permitido");
     } else {
@@ -39,20 +37,23 @@ function verificarAcceso() {
 function temperatura() {
     let temperatura = parseFloat(prompt("Ingrese la temperatura actual:"));
     let mensaje = "";
-    
+
+    // CORRECCIÓN: Los rangos lógicos con && estaban al revés (ej: no hay números menores a 10 y mayores a 24 a la vez).
     if (temperatura < 10) {
         mensaje = "Hace frío";
-    } else if (temperatura >= 10 && temperatura <= 24) {
+    } else if (temperatura >= 10 && temperatura < 25) {
         mensaje = "Temperatura agradable";
-    } else {
+    } else if (temperatura >= 25 && temperatura <= 40) {
         mensaje = "Hace calor";
+    } else {
+        mensaje = "Temperatura muy alta";
     }
-    
-    // Alerta adicional independiente
-    if (temperatura > 35) {
-        mensaje += "\n⚠️ ¡Alerta!: Temperatura extrema";
+
+    // CORRECCIÓN: Una temperatura no puede ser menor a -2 Y mayor a 60 al mismo tiempo. Se cambia por OR (||).
+    if (temperatura <= -2 || temperatura >= 60) {
+        mensaje += "\n¡Alerta!: Temperatura extrema";
     }
-    
+
     alert(mensaje);
 }
 
@@ -60,7 +61,7 @@ function temperatura() {
 function verificarAdministrador() {
     let usuario = prompt("Ingrese su nombre de usuario:");
     let contrasena = prompt("Ingrese su contraseña:");
-    
+
     if (usuario === "admin" && contrasena === "12345") {
         alert("Bienvenido administrador");
     } else if (usuario === "admin" && contrasena !== "12345") {
@@ -79,21 +80,23 @@ function evaluarEstudiante() {
     
     let promedio = (nota1 + nota2 + nota3) / 3;
     let resultado = "";
-    
-    if (promedio >= 6.0) {
+
+    // CORRECCIÓN: Se ajustaron los rangos. En el "Reprobado" tenías el mínimo y el máximo invertidos.
+    if (promedio >= 6.0 && promedio <= 7.0) {
         resultado = "Aprobado con excelencia";
-    } else if (promedio >= 4.0 && promedio <= 5.9) {
+    } else if (promedio >= 4.0 && promedio < 6.0) {
         resultado = "Aprobado";
-    } else {
+    } else if (promedio >= 1.0 && promedio < 4.0) { // Antes decía >= 3.9 && <= 1.0 (imposible)
         resultado = "Reprobado";
+    } else {
+        resultado = "Nota fuera de rango válido";
     }
-    
+
     let mensajeFinal = "Estudiante: " + nombre + "\nPromedio: " + promedio.toFixed(1) + "\nEstado: " + resultado;
-    
-    // Verificación si alguna nota es menor a 2.0 usando el operador OR (||)
+
     if (nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0) {
-        mensajeFinal += "\n⚠️ Debe asistir a reforzamiento.";
+        mensajeFinal += "\nDebe asistir a reforzamiento.";
     }
-    
+
     alert(mensajeFinal);
 }
