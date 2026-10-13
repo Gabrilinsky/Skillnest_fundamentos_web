@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.Barra {
+.top-bar{
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -41,6 +41,35 @@ width: 100%;
     background-color: #d5a6bc;
 }
 
+
+
+
+.Titulo-flor{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.images{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Subtitulo{
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.Azul{
+    margin-left: 1200px;
+    text-decoration: underline;
+    color: blue;
+}
+
 .nav a{
     color: black;
     font-size: 40px;
@@ -51,12 +80,13 @@ width: 100%;
     background-color: #d2dee9;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 153px;
+    font-size: 1.5rem;
     padding: 20px;
-    width: 90%;
-    max-width: 900px;
+    width: 110%;
     flex-wrap: wrap;
     margin: auto;
     box-sizing: border-box;
     border-radius: 8px;
 }
+

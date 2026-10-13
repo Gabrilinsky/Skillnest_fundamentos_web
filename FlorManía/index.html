@@ -10,41 +10,45 @@
 <header class="header">
   <!-- Barra superior principal -->
   <div class="top-bar">
-    <h1 class="logo">FlorManía</h1>
+    <h1 class="logo"><span class="Flor">Flor</span><span class="Manía">Manía</span></h1>
     <nav class="nav">
-      <button class="Boton">Envía Flores</button>
+      <button class="Boton" id="cambiartexto">Envía Flores</button>
       <button class="Boton">Nosotros</button>
     </nav>
-    <button class="Boton-login">Iniciar Sesión</button>
+    <button class="Boton-login" onclick="Login()">Iniciar Sesión</button>
   </div>
 
   <!-- Subbarra con el cuadro gris justo debajo -->
   <nav class="Cuadros">
     <div class="Libro">
-      <img class="caja" src="static/images/Libro.png" alt="Novelas" />
-      <p>Novelas</p>
+      <p>Girasoles</p>
     </div>
     <div class="Libro">
-      <img class="caja" src="static/images/ciencia.png" alt="Ciencia" />
-      <p>Ciencia</p>
+      <p>Rosas</p>
     </div>
     <div class="Libro">
-      <img class="caja" src="static/images/Estatua.png" alt="Historia" />
-      <p>Historia</p>
+      <p>Claveles</p>
     </div>
     <div class="Libro">
-      <img class="caja" src="static/images/PC.png" alt="Tecnología" />
-      <p>Tecnología</p>
+      <p>Reina Victoria</p>
     </div>
     <div class="Libro">
-      <img class="caja" src="static/images/Pintura.png" alt="Arte" />
-      <p>Arte</p>
+      <p>Orquideas</p>
     </div>
     <div class="Libro">
-      <img class="caja" src="static/images/oso.png" alt="Infantil" />
-      <p>Infantil</p>
+      <p>Margaritas</p>
     </div>
   </nav>
+
+  <h1 class="Titulo-flor">Flor del mes</h1>
+
+  <div class="images">
+  <img src="static/images/flor-del-mes.jpg" alt="Flor">
+  </div>
+
+<p class="Subtitulo">Mostrando <span> 50 resultados</span> </p>
+<p class="Azul">Ver más flores</p>
+
 </header>
 </body>
 <script src="static/js/script.js"></script>
